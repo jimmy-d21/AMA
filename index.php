@@ -31,7 +31,7 @@ include("db.php");
                 if (password_verify($password, $row['password'])) {
                     $_SESSION['username'] = $row['username'];
                     $_SESSION['role'] = $row['role'];
-                    header("Location: dashboard.php");
+                    header("Location: /AMA/dashboard.php");
                     exit();
                 } else {
                     echo "<p class='error'>Invalid Credentials</p>";
@@ -46,7 +46,7 @@ include("db.php");
         <input type="password" name="password" placeholder="Password">
         <button type="submit" name="login">Login</button>
     </form>
-    <a href="register.php">Don't have an account? Register</a>
+    <a href="/AMA/register.php">Don't have an account? Register</a>
 </div>
 </body>
 </html>
