@@ -15,7 +15,7 @@
                 if (successMsg) {
                     successMsg.style.display = "none";
                 }
-            }, 3000); // 3000 ms = 3 seconds
+            }, 3000);
     </script>
 </head>
 <body>
