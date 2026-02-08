@@ -19,7 +19,7 @@ if (isset($_POST['login'])) {
             if (password_verify($password, $row['password'])) {
                 $_SESSION['username'] = $row['username'];
                 $_SESSION['role'] = $row['role'];
-                header("Location: dashboard.php");
+                header("Location: /AMA/dashboard.php");
                 exit();
             } else {
                 echo "<p class='error'>Invalid Credentials</p>";
