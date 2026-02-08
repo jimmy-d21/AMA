@@ -7,6 +7,15 @@ include("db.php");
 <head>
     <title>Login</title>
     <link rel="stylesheet" href="style.css">
+    <script>
+        // Hide the error message after 3 seconds
+            setTimeout(() =>{
+                let errorMsg = document.querySelector(".error");
+                if (errorMsg) {
+                    errorMsg.style.display = "none";
+                }
+            }, 3000);
+    </script>
 </head>
 <body>
 <div class="container">
